@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("c5afeb3d-9753-469a-9c2f-123f3b8c17d1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+.shop-logo {
+    width: 70px;
+    height: 70px;          /* forces a perfect circle */
+    margin-bottom: 30px;
+
+    border-radius: 50%;     /* 🔵 circle */
+    object-fit: cover;      /* prevents stretching */
+
+    border: 3px solid white; /* optional – clean look */
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+/* BUTTON GROUP */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BUTTONS */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 260px;
+    padding: 15px 25px;
+
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.social-link i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.instagram:hover { color: #f09433; border-color: #f09433; }
+.snapchat:hover  { color: #fffc00; border-color: #fffc00; }
+.tiktok:hover    { color: #25f4ee; border-color: #25f4ee; }
+
+.social-link:active {
+    transform: scale(0.97);
+}
